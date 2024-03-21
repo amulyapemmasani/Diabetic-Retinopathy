@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diabetic Retinopathy Detection - Tensorflow</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #7f7fd5, #86a8e7, #91eae4); /* Vibrant gradient background */
+            font-family: Arial, sans-serif; 
+            color: #ffffff; /* White text for better visibility on the gradient background */
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px; /* Adjusted positioning */
+            font-size: 28px; /* Larger font size for the heading */
+            color: #ffffff; /* White text for the heading */
+        }
+
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            padding: 20px;
+            border: 2px solid #555; /* Border around the text */
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent white background */
+            max-width: 500px;
+            text-align: center;
+            box-sizing: border-box;
+            color: #333333; /* Dark text for readability */
+            margin-top: 20px; /* Spacing above the paragraph */
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px; /* Larger font size for the button */
+            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+            margin-top: 20px; /* Spacing above the button */
+        }
+
+        button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Diabetic Retinopathy Detection</h1>
+        <p>The predicted DR severity is: {{ text }}</p>
+        <button onclick="window.location.href='/';">Go to Home Page</button>
+    </div>
+</body>
+</html>

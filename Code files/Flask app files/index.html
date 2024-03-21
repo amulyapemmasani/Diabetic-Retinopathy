@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diabetic Retinopathy Detection - TensorFlow</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Centers container horizontally */
+            align-items: center; /* Centers container vertically */
+            background: linear-gradient(135deg, #7f7fd5, #86a8e7, #91eae4); /* Vibrant gradient background */
+            font-family: Arial, sans-serif; 
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Aligns items in the container centrally */
+            background-color: rgba(255, 255, 255, 0.92); /* Lighter and more opaque white for the container */
+            border-radius: 20px; 
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* Enhanced shadow */
+            padding: 20px; /* Adjusted padding */
+            max-width: 450px; 
+            color: #000000; /* Black text for the container */
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px; 
+            font-size: 24px; 
+            color: #000000;
+        }
+
+        label, input {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        input[type="file"] {
+            padding: 10px;
+            border: 2px solid #86a8e7; 
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.85);
+            color: #333333;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px; 
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px; 
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Diabetic Retinopathy Detection</h1>
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <label for="image">Upload a Retina Image:</label>
+            <input type="file" id="image" name="image">
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>
